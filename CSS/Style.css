@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+/*网页样式*/
+			body{
+				font-family: STxingkai;
+				background-image:url("../img/background.png");
+				background-size:cover;
+				background-repeat:no-repeat;
+				position: relative;
+			}
+			/*导航*/
+			.head{
+				width: 1400px;
+				height: 80px;
+				display: flex;
+			}
+			/*LOGO*/
+			.logo img{
+				width: 150px;
+				height: 200px;
+			}
+			/*登陆*/
+			.login{
+				margin-left: 1120px;
+				margin-top: 30px;
+				font-size: 28px;	
+			}
+			/*登陆样式*/
+			.login a{
+				text-decoration: none;
+				display: inline-block;
+				color:rgba(0,0,0,1.00);	
+			}
+			.login a:hover{
+				color: aliceblue;
+			}
+			
+			/*菜单名*/
+			.dropbtn{
+				display: flex;
+				background-color:rgba(140,49,56,1.00);
+				color: white;
+				margin-top: 10px;
+				font-size: 50px;
+				border: none;
+				width: 80px;
+				padding-left: 25px; 
+				
+				
+			}
+			/*下拉菜单设置*/
+			.dropdown{
+				margin-left: 1430px;
+				position: absolute;
+				width: 80px;
+				display: inline-block;
+			}
+			.dropdown-content{
+				display: none;
+				background-color: #f9f9f9;
+				width: 80px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				font-size: 18px;
+				text-align: center;
+			}
+			/*菜单链接，色彩变化*/
+			.dropdown-content a{
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content a:hover {
+				background-color: #f1f1f1;
+			}
+			
+			.dropdown:hover .dropdown-content{
+				display: block;
+			}
+			
+			.dropdown:hover .dropbtn{
+				background-color: #FB9192;
+			}
+			
+			/*搜索栏*/
+			.seach-box{
+				position: absolute;
+				top:6%;left:73%;
+				transform: translate(-50%,-50%);
+				background-color:rgba(140,49,56,1.00);
+				height: 30px;
+				border-radius: 40px;
+				padding:10px;
+				display: flex;
+			}
+			
+			.seach-txt{
+				width:200px;
+				height: 25px;
+				background-color: rgba(140,49,56,1.00);
+				border: none;
+				outline: none;
+			}	
+			
+			/*标题样式*/
+			.main{
+				top: 200px;
+				width: 1000px;
+				height: 450px;
+				display: flex;
+				font-size: 260px;
+				margin-left: 450px;
+			}
+			/*春*/
+			.spring{
+				width: 280px;
+				height: 200px;
+				margin-top: 40px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-shadow:  0 2px 6px rgba(255,255,255);
+			}
+			/*节*/
+			.jie{width: 280px;
+				height: 200px;
+				display: flex;
+				text-shadow:  0 2px 6px rgba(255,255,255);
+			}
+			/*网页入口*/
+			.enter{
+				padding-top: 10px;
+				font-size: 40px;
+				margin-left: 1350px;
+				text-shadow:  0 1px 2px rgba(255,255,255);
+			}
+			.enter a{
+				display: inline-block;
+				text-decoration: none;
+				color: rgba(0,0,0,1.00);
+			}
+			.enter a:hover{color: aliceblue;}
+			
+
