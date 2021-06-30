@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html style="height: 100%" lang="zh"><!--网页主要语言为中文简体-->
+    <head>
+        <meta charset="utf-8">
+		<title>春节红包活动数据</title>
+		<link rel="stylesheet" href="css/RedpacketData.css">
+    </head>
+	
+    <body style="height: 100%;margin: 0;" >
+		
+		<div class="daohang">
+			<a href="../../index.html"><img src="img/mlogo.png" alt=""/></a>
+			
+				<div class="Daohang">
+				<div class="one" style="--i:-30">壹</div>
+				<div class="two" style="--i:30">壹</div>
+				<a href="../../One/SpringOrign/SpringOrign.html" class="laiyuan">春节由来</a>
+			</div>
+			<div class="Daohang">
+				<div class="one" style="--i:-30">贰</div>
+				<div class="two" style="--i:30">贰</div>
+				<a href="../SpringCulture/Springculture.html" class="laiyuan">春节习俗</a>
+			</div>
+			<div class="Daohang">
+				<div class="one" style="--i:-30">叁</div>
+				<div class="two" style="--i:30">叁</div>
+				<a href="../../One/SpringLetter/Springletter.html" class="laiyuan">春节文学</a>
+			</div>
+			<div class="Daohang">
+				<div class="one" style="--i:-30">肆</div>
+				<div class="two" style="--i:30">肆</div>
+				<a href="Data.html" class="laiyuan">相关数据</a>
+			</div>
+		</div>
+		<div class="leftcolumn">
+			<div class="row">
+				<ul>
+					<li><a href="RedpacketData.html">春节红包数据</a></li>	
+					<li><a href="Chunyundata.html">春运相关数据</a></li>
+					<li><a href="Chunwandata.html">春晚相关数据</a></li>
+				</ul>
+			</div>
+		</div>
+        <div id="container" style="height: 100%"></div>
+		<!--表格-->
+        <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+        <script>
+				var dom = document.getElementById("container");
+				var myChart = echarts.init(dom);
+				var app = {};
+				var option;
+				var colors = ['#c40a0a'];
+				option = {
+				 title:[{
+					  text: '2021年春节网络红包活动情况',
+					  left: 'center',
+					  textStyle: {
+						fontSize: 30,
+						color:'rgba(0, 0, 0, 1)',
+						textBorderColor:'rgba(255, 255, 255, 1)',
+						textBorderWidth: 1,
+											},
+
+				 		},
+				 	{
+					subtext: '（数据来源：草莓派数据调查与计算系统）',
+					left: '85%',
+					top: '92%',
+					textAlign: 'center',
+					subtextStyle: {
+						fontSize: 15,
+						color:'rgba(0, 0, 0, 1)'
+						}
+				 }],
+				color:colors,
+				 tooltip: {
+					trigger: 'axis',
+					axisPointer: {
+						type: 'shadow'
+								},
+
+				 		},
+				xAxis: [{
+					type: 'category',
+					data: ['支付宝', '微信', '抖音', '快手', '拼多多', '淘宝', 'QQ','百度','新浪微博','腾讯微视','京东','其他'],
+					axisLine: {
+							show: true,
+							lineStyle: {
+								color: colors[1]
+								}
+							},
+					 nameTextStyle: {
+						 fontSize: 20,
+					 	}
+				}],
+				yAxis: {
+					type:'value',
+					min:'0',
+					max:'100',
+					name:'百分比',
+					axisLine: {
+							show: true,
+							lineStyle: {
+								color: colors[1]
+								}
+							},
+
+				},
+				series: [{
+					type: 'bar',
+					data: [61.4, 54.2, 50.0, 41.6, 25.7, 23.1, 22.4, 21.8, 21.4, 16.6, 14.9, 2.6],
+					label: {
+							show: true,
+							position: 'inside'
+							},
+						}]
+			};
+
+			if (option && typeof option === 'object') {
+				myChart.setOption(option);
+			}
+		</script>
+		
+		<!--分析-->
+		<div class="anayly">
+			<p>
+			在2021年春节网络红包活动中，支付宝、微信、抖音和快手具有较高的活动热度。其中，61.4%的用户参与了支付宝的集五福活动，54.2%的用户参与了微信红包封面活动。在“新冠”疫情的影响下，线上拜年逐渐成为新潮流。网络红包作为线上拜年的重要环节，其渗透率以及活跃度持续走高，网络红包拜年已经成为社会大众新年俗，打破以往春节红包的单一方式，红包活动的出现，更是让春节更加热闹，不仅调动人们的兴趣，也跟紧时代的步伐，为我们中华民族传统节日增添色彩。
+			</p>
+		</div>
+		<footer>
+		&copy;一丝不苟小组技术支持
+		</footer>
+    </body>
+</html>
+    

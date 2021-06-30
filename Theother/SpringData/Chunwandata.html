@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>春晚收视率统计图</title>
+		<link rel="stylesheet" href="css/chunwan.css"/> 
+	</head>
+
+	<body style="height: 700px; margin=0">
+		
+		
+			<div class="daohang">
+			<a href="../../index.html"><img src="img/mlogo.png" alt=""/></a>
+			
+				<div class="Daohang">
+				<div class="one" style="--i:-30">壹</div>
+				<div class="two" style="--i:30">壹</div>
+				<a href="../../One/SpringOrign/SpringOrign.html" class="laiyuan">春节由来</a>
+			</div>
+			<div class="Daohang">
+				<div class="one" style="--i:-30">贰</div>
+				<div class="two" style="--i:30">贰</div>
+				<a href="../SpringCulture/Springculture.html" class="laiyuan">春节习俗</a>
+			</div>
+			<div class="Daohang">
+				<div class="one" style="--i:-30">叁</div>
+				<div class="two" style="--i:30">叁</div>
+				<a href="../../One/SpringLetter/Springletter.html" class="laiyuan">春节文学</a>
+			</div>
+			<div class="Daohang">
+				<div class="one" style="--i:-30">肆</div>
+				<div class="two" style="--i:30">肆</div>
+				<a href="Data.html" class="laiyuan">相关数据</a>
+			</div>
+		</div>
+		<div class="leftcolumn">
+			<div class="row">
+				<ul>
+					<li><a href="RedpacketData.html">春节红包数据</a></li>	
+					<li><a href="Chunyundata.html">春运相关数据</a></li>
+					<li><a href="Chunwandata.html">春晚相关数据</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="container" style="height: 100%"></div>
+		<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+		<script>
+			var dom = document.getElementById("container");
+			var myChart = echarts.init(dom);
+			var app = {};
+			var option;
+
+
+			option = {
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: {
+						type: 'cross',
+						crossStyle: {
+							color: '#525252'
+						}
+					}
+				},
+				
+				//数据形式
+				toolbox: {
+					feature: {
+						dataView: {show: true, readOnly: false},
+						magicType: {show: true, type: ['line', 'bar']},
+						restore: {show: true},
+						saveAsImage: {show: true}
+					}
+				},
+				
+				//三个统计数据
+				legend: {
+					data: ['综合收视率', '央视收视率', '总观看人次']
+				},
+				
+				//x轴设定
+				xAxis: [
+					{
+						type: 'category',
+						data: ['2008年', '2009年', '2010年', '2011年', '2012年', '2013年', '2014年', '2015年', '2016年', '2017年', '2018年', '2019年','2020年','2021年'],
+						axisPointer: {
+							type: 'shadow'
+						}
+					}
+				],
+				
+				//y轴设定
+				yAxis: [
+					{
+						type: 'value',
+						name: '比率',
+						min: 25,
+						max: 40,
+						interval: 1,
+						axisLabel: {
+							formatter: '{value} %'
+						}
+					},
+					{
+						type: 'value',
+						name: '人数',
+						min: 0,
+						max: 15,
+						interval: 1,
+						axisLabel: {
+							formatter: '{value} 亿人'
+						}
+					}
+				],
+				
+				//数据设定
+				series: [
+					{
+						name: '综合收视率',
+						type: 'bar',
+						data: [32.29, 34.82, 38.26, 31.04, 32.75, 31.17, 30.98, 29.60, 30.98, 31.46, 32.50, 32.81, 34.64, 37.65],
+					},
+					{
+						name: '央视收视率',
+						type: 'bar',
+						data: [29.24, 29.35, 28.42, 28.34, 25.37, 27.03, 28.01, 27.83, 28.88, 29.75, 27.14, 27.67, 28.50, 30.18]
+					},
+					{
+						name: '总观看人次',
+						type: 'line',
+						yAxisIndex: 1,
+						data: [7.10, 7.13, 7.10, 7.40, 7.70, 7.50, 9.04, 6.90, 10.33, 10.80, 11.31, 11.73, 12.32, 12.72]
+					}
+				]
+			};
+
+			if (option && typeof option === 'object') {
+				myChart.setOption(option);
+			}
+
+        </script>
+		
+		
+		<p style="text-align: center; font-size: 11px">
+			数据来源：
+			http://www.baijiexiu.com/zongyi/34822.html 
+			及								
+			百度搜索引擎检索结果汇总</p>
+
+		<div class="anayly">
+			<p>
+				春晚作为我国春节期间的一大盛会，自上世纪九十年代就通过广播和早期黑白电视进入老百姓的节日生活中。而随着时间推移，看春晚几乎成为了家家户户过年必备的一项活动。从数据图中可以看到，无论数据如何起伏，也有庞大的看春晚的人群基数，并且在近年，随着科技的发展，观看的人数也在不断上升。</p>
+			<p>
+				同时，通过对近年的收视率和观看人数汇总，可以看到，在2010年，春晚的综合收视率达到了最高峰，而2015年处于春晚的“低谷期”。近五年来，随着我国相关科技的普及，人们可以更容易地、随时随地地观看春晚。也因为移动网络的普及，人们的娱乐方式与获取资源的渠道变得更加多元，不再局限于电视观看春晚。所以在图中央视电视收视率有一定起伏。但总体来看，我国春晚的观看人数和收视率都在不同程度地上升阶段。
+			</p>
+		</div>
+		<footer>
+		&copy;一丝不苟小组技术支持
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+				background-attachment: fixed;
+				box-sizing: border-box
+			}
+			
+			body{
+				background-attachment: fixed;
+				background-image: url("../img/DBackground.png");
+				background-size:cover;
+				background-repeat:no-repeat;
+				display: flex;
+			}
+			/*导航背景*/
+			.Head{
+				background-attachment: fixed;
+				margin-top: 8px;
+				height: 110px;
+				width: 1480px;
+				margin-left: 23px;
+				background-image:url("../img/Daohang.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: flex;
+				box-shadow:  0 2px 20px rgba(0,0,8);
+				position: fixed;
+			}
+			/*LOGO*/
+			.logo img{
+				width: 120px;
+			}
+			/*导航格式*/
+			.Daohang{
+				position: relative;
+				width: 250px;
+				display: flex;
+				justify-content: center;
+				margin: 0 60px;
+			}
+			/*导航样式*/
+			.one,.two{
+				font-family: STxingkai;
+				font-size: 60px;
+				line-height: 120px;
+				position: absolute;
+				top: 0;
+				transition: .4s;
+			}
+			/*文字上半部分开*/
+			.two{
+				clip-path:inset(49% 0 0 0);
+			}
+			/*文字下半部分开*/
+			.one{
+				clip-path:inset(1% 0 50% 0);
+			}
+			.Daohang:hover .one,.Daohang:hover .two{
+				top: calc(var(--i)*1px);
+			}
+			.Daohang:hover .laiyuan{
+				opacity: 1;
+				
+			}
+			/*中间字*/
+			.laiyuan{
+				text-decoration: none;
+				color: rgba(0,0,0,1.00);
+				font-family: STxingkai;
+				font-size: 40px;
+				line-height: 130px;
+				opacity: 0;
+				transition: .3s;
+			}
+			
+			
+			/*民俗部分*/
+			.container{
+				position: inherit;
+				height:100%;
+				width: 1200px;
+				margin-top: 120px;
+				margin-right: auto;
+				margin-bottom: auto;
+				margin-left: 250px;
+				z-index: -1;
+			}
+			
+			/*卡片*/
+			.card{
+				width: 100%;
+				height: 450px;
+				padding-left: 70px;
+				margin-top: 120px;
+				margin-bottom: 80px;
+				position: inherit;
+			
+			}
+			
+			/*正文文字*/
+			.card .card-text p {
+				font-family: "";
+				font-size: 20px;
+				line-height: 25px;
+				margin-top: 30px;
+				margin-left: 40px;
+				margin-right: 20px;
+				
+			}
+			/*靠左图*/
+			.card-img-left{
+				width:600px;
+				height:450px;
+				float:left;
+				overflow:hidden;
+			}
+			
+			/*小标题文字*/
+			.card .card-text h3 {
+				font-family: "";
+				font-size: 30px;
+				text-align: center;
+			}
+			/*靠右图*/
+			.card-img-right{
+				width:600px;
+				height: 450px;
+				float: right;
+				overflow: hidden;
+			}
+			.card-text{
+				width: 460px;
+				margin: 0 20px;
+				height: 450px;
+				float: left;
+				
+			}
+			
+			/*侧边栏部分*/
+			.leftcolumn{
+				width: 200px;
+				float: left;
+				margin-left: 23px;
+			}
+			
+			ul{
+				text-align: center;
+				list-style-type: none;
+				position: fixed;
+				text-align: center;
+				height:100%;
+				width: 180px;
+				overflow: auto;
+				background-color: rgba(245,111,113,0.50);
+				margin-top: 120px;
+				font-size: 21px;
+			}
+			
+			li{
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			li a{
+				text-align: center;
+				display: block;
+				color: #000;
+				text-decoration: none;
+			}
+			
+			/* 左侧导航鼠标悬停变色 */
+			li a:hover{
+				background-color: #9F2E2E;
+				color: white;
+				width: 100%;
+			}
+
+			
+			/* 右边 */
+			/*右侧大小*/
+			.rightcolumn{
+				width: 1230px;
+				background-color: rgba(245,111,113,0.50);
+				padding-left: 20px;
+				padding-right: 20px;
+				z-index: -1;
+			}
+			
+			
+			/*分页跳转部分*/
+			.pagination{
+				margin-top: 21900px;
+				display: inline-block;
+				
+				
+			}
+
+			.pagination a {
+				font-size: 30px;
+				color: black;
+				float:left;
+				padding: 8px 8px;
+				text-decoration: none;
+			}
+
+			.pagination a.active {
+				color:rgba(0,0,0,1.00);
+				border-radius: 5px;
+			}
+
+			.pagination a:hover {
+				background-color: #853232;
+				border-radius: 5px;
+			}
+			.pagination a.food {
+				color:rgba(0,0,0,1.00);
+				border-radius: 5px;
+			}
+			
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+.menus.menus1 h1 {
+	vertical-align: sub;
+	float: left;
+	margin-top: 30px;
+	font-size: 54px;
+	text-transform: none;
+	font-family: "华文行楷";
+	font-weight: lighter;
+	color: #F89165;
+}
+.banenr {
+	height: 80px;
+	width: auto;
+	background-color: #eb4537;
+}
+.banenr .banner-bg h3 {
+	font-size: 36px;
+	font-weight: lighter;
+	float: left;
+	margin-top: 20px;
+	color: #f1f1f1;
+
+}
+
+.banner-bg {
+	margin: auto;
+	width: 1100px;
+	height: 80px;
+	padding-left: 0px;
+}
+
+
+
+li {
+    list-style: none;
+}
+.clear {
+    clear: both;
+}
+.menus {
+	width: 1100px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	height: 100px;
+}
+.menus ul {
+	width: 700px;
+	position: relative;
+	float: right;
+	margin-top: 20px;
+	font-style: italic;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #ff5a5a;
+}
+.menus li {
+	float: left;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	font-size: 24px;
+}
+.menus li:nth-child(2) {
+    color: #fff;
+}
+.menus .bg {
+	width: 100px;
+	height: 40px;
+	position:absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background-image: url("../img/DBackground.png");
+}
+
+.tab {
+    width: 750px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 500px;
+    text-align: center;
+    color: #888;
+    font-weight: bold;
+    display: none;
+}
+.show {
+    display: block;
+}
+
+#footer {
+	text-align: center;
+	vertical-align: middle;
+	height: 150px;
+	padding-top: 50px;
+	color: #FFF;
+	background-color: #333;
+	font-size: 16px;
+}
+body {
+	margin: 0px;
+}
+.zpc {
+	padding: 10px;
+	height: 700px;
+	
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#zpc-text-line {
+	font-family: "微软雅黑";
+	font-size: 36px;
+	height: 40px;
+	width: auto;
+	border-left-width: 7px;
+	border-left-style: solid;
+	border-left-color: #6F3;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #F00;
+	padding-bottom: 0px;
+}
+.banner-x{
+	width:auto;
+	height:500px;}
+.jrcd {
+	height: 125px;
+	width: 1100px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+}

@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+				background-color:rgba(116,70,63,0.30) ;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+			.daohang img{
+				width: 120px;}
+			.daohang{
+				height: 110px;
+				width: 1480px;
+				margin-left: 10px;
+				background-image:url(" ../img/Daohang.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+				display:flex;
+				box-shadow:  0 2px 20px rgba(0,0,8);
+				
+			}
+			/*导航格式*/
+			.Daohang{
+				position: relative;
+				width: 250px;
+				display: flex;
+				justify-content: center;
+				margin: 0 60px;
+			}
+			/*导航样式*/
+			.one,.two{
+				font-family: STxingkai;
+				font-size: 60px;
+				line-height: 120px;
+				position: absolute;
+				top: 0;
+				transition: .4s;
+			}
+			/*文字上半部分开*/
+			.two{
+				clip-path:inset(49% 0 0 0);
+			}
+			/*文字下半部分开*/
+			.one{
+				clip-path:inset(1% 0 50% 0);
+			}
+			.Daohang:hover .one,.Daohang:hover .two{
+				top: calc(var(--i)*1px);
+			}
+			.Daohang:hover .laiyuan{
+				opacity: 1;
+				
+			}
+			/*中间字*/
+			.laiyuan{
+				text-decoration: none;
+				color: rgba(0,0,0,1.00);
+				font-family: STxingkai;
+				font-size: 40px;
+				line-height: 130px;
+				opacity: 0;
+				transition: .3s;
+			}
+
+			.leftcolumn{
+				float: left;
+				
+			}
+			
+			.leftcolumn ul{
+				padding: 0 10px;
+				list-style-type: none;
+				position: fixed;
+				width: 110px;
+				overflow: auto;
+				background-color: rgba(245,111,113,0.50);
+				margin-top: 120px;
+				font-size: 18px;
+			}
+			
+			.leftcolumn li{
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.leftcolumn li a{
+				display: block;
+				color: #000;
+				text-decoration: none;
+			}
+			
+			/* 左侧导航鼠标悬停变色 */
+			.leftcolumn li a:hover{
+				background-color: #9F2E2E;
+				color: white;
+				width: 100%;
+			}
+			#container{
+				margin-top: 50px;
+				height: 500px;
+				z-index: -1;
+			}
+			.anayly{
+				width: 1300px;
+				height: 120px;
+				background-color:antiquewhite;
+				margin-left: 130px;
+				padding: 10px 15px;
+				line-height: 2;
+			}
+			footer{
+				font-family: songti;
+				margin-left: 650px;
+				}
+		
