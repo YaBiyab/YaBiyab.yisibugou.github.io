@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+			/*总设定*/
+			*{
+				margin:0;
+				padding:0;
+			 }
+
+
+			/*背景颜色字体等*/
+			body{
+				background-image: url("../img/DBackground.png");
+				background-size:cover;
+				background-repeat:no-repeat;
+			}
+			/*导航背景*/
+			.Head{
+				height: 110px;
+				width: 1480px;
+				margin-left: 25px;
+				background-image:url("../img/Daohang.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: flex;
+				box-shadow:  0 2px 20px rgba(0,0,8);
+				position: fixed;
+			}
+			/*LOGO*/
+			.logo img{
+				width: 120px;
+			}
+			/*导航格式*/
+			.Daohang{
+				position: relative;
+				width: 250px;
+				display: flex;
+				justify-content: center;
+				margin: 0 60px;
+			}
+			/*导航样式*/
+			.one,.two{
+				font-family: STxingkai;
+				font-size: 60px;
+				line-height: 120px;
+				position: absolute;
+				top: 0;
+				transition: .4s;
+				color: rgba(0,0,0,1.00);
+			}
+			/*文字上半部分开*/
+			.two{
+				clip-path:inset(49% 0 0 0);
+			}
+			/*文字下半部分开*/
+			.one{
+				clip-path:inset(1% 0 50% 0);
+			}
+			.Daohang:hover .one,.Daohang:hover .two{
+				top: calc(var(--i)*1px);
+			}
+			.Daohang:hover .laiyuan{
+				opacity: 1;
+				
+			}
+			/*中间字*/
+			.laiyuan{
+				text-decoration: none;
+				color: rgba(0,0,0,1.00);
+				font-family: STxingkai;
+				font-size: 40px;
+				line-height: 130px;
+				opacity: 0;
+				transition: .3s;
+			}
+

@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+/*背景图+字体*/
+			body{
+					background-image:url("../img/DBackground.png");
+					background-size: cover;
+					justify-content: center;
+					
+			}
+			
+			/*主要登录板块*/
+			.Box{
+				font-family:STxingkai;
+					display: flex;
+					margin-top: 90px;
+					margin-left: 200px;
+					width: 1100px;
+					height: 550px;
+					box-shadow: 0 2px 20px rgba(0,0,8);
+					
+				}
+			/*登录板块样式*/
+			.Block{
+					width: 900px;
+					height: 550px;
+					background-image: url("../img/Login.jpg");
+					background-size: cover;
+				  }
+			/*登录框*/
+			.Login{
+					width: 300px;
+					height: 550px;
+				    background-color: aliceblue;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				  }
+			.Main{
+				    width: 250px;
+					height: 500px;
+			     }
+			.Main h2{
+					text-align: center;
+					font: 900 30px;
+				    }
+			.Name{
+					width: 230px;
+					margin: 20px 0;
+					outline:none;
+					padding:10px;
+				    border-bottom: 3px #9A21D3;
+				 }
+			.Key{
+					width: 230px;
+					margin: 20px 0;
+					padding:10px;
+				    border-bottom: 3px #9A21D3;
+					outline:none;
+				
+				}
+			/*忘记密码*/
+			.Forget{
+					float: right;
+					margin: 10px 0;
+					text-decoration:none;
+					color: rgba(0,0,0,1.00);
+				   }
+			.Forget:hover{
+				color:rgba(175,26,21,1.00);
+			}
+			.Back{
+				width: 70px;
+				float: right;
+				margin-top: 230px;
+				margin-left: 120px;
+				
+			}
+			.Back a{
+				text-decoration: none;
+				color: rgba(0,0,0,1.00);
+			}
+			.Back a:hover{
+				color:rgba(175,26,21,1.00);
+			}
+			/*登录按钮*/
+			.In{
+				position: absolute;
+				margin: 20px;
+				bottom: 150px;
+				display: block;
+				width: 200px;
+				height: 50px;
+				background-color: rgba(255,112,76,1.00);
+				color:#000000;
+				text-align: center;
+				padding-top: 25px;
+				text-decoration: none;
+				font-size: 25px;
+			   }
+			.In:hover{
+				background-color:rgba(133,0,2,1.00)
+				}
+			footer{
+			font-family: songti;
+			margin-left: 600px;
+			margin-top: 80px;
+			}
